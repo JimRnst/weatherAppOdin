@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: monospace;
+    color: white;
+}
+
+#search{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    top: -100px;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+img#glass{
+    width: 30px;
+}
+
+#input-search{
+    width: 250px;
+    height: 25px;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: none;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+#input-search::placeholder{
+    color: white;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#ubication{
+    display: flex;
+    gap: 10px;
+}
+
+#name{
+    font-size: 25px;
+}
+
+#country{
+    font-size: 10px;
+}
+#temp{
+    font-size: 100px;
+}
+#feelslike,
+#tempMaxMin,
+#description{
+    font-size: 10px;
+}
+
+#data{
+    display: flex;
+}
+
+#data-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#btn-grades{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+/* SPINNER */
+.dots {
+    width: 56px;
+    height: 13.4px;
+    background: radial-gradient(circle closest-side,white 90%,#0000) 0 0/33% 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: dots-e3xtdg 1.5s steps(4) infinite;
+ }
+ 
+ @keyframes dots-e3xtdg {
+    to {
+       clip-path: inset(0 -34% 0 0);
+    }
+}
